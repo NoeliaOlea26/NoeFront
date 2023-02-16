@@ -1,0 +1,26 @@
+<header>
+    <div class="icon">
+        <div class="logotipo">
+            <div><img src="../../../assets/images/logoAP5.png" ></div>
+        </div> 
+        <button type="button" class="btn btn-danger " routerLink ="/iniciar-sesion" *ngIf="!isLogged">Login </button>
+        <!-- <button type="button" class="btn btn-danger " routerLink ="/login" >Test </button> -->
+        <button type="button" class="btn btn-danger " (click)=salir() *ngIf="isLogged">Salir </button>
+        <!-- <button class="boton tres" href="https://www.google.com.ar"><span>Login</span></button> -->
+    </div>
+    
+    <input type="checkbox" id="bt-menu">
+    <label for="bt-menu"><img src="../../../assets/images/menu.png" width="30px" height="30px"></label>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="#inicio1">Inicio</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educacion</a></li>
+            <li><a href="#hysS">HyS Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+    </nav>
+</header>
+
+
