@@ -17,7 +17,7 @@ const metadata = {
 
 // Upload file and metadata to the object 'images/mountains.jpg'
 const file = $event.target.files[0];
-const storageRef = ref(storage, 'images/' + name);
+const storageRef = ref(storage, 'experiencias/' + name);
 const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
 // Listen for state changes, errors, and completion of the upload.

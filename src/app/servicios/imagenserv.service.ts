@@ -11,7 +11,7 @@ export class ImagenservService {
     constructor(private storage: Storage) { }
   public uploadImage($event: any, name: string){
   const file = $event.target.files[0];
-  const imagRef = ref(this.storage, `image/` + name);
+  const imagRef = ref(this.storage, `descrip/` + name);
   console.log(imagRef);
   console.log(name);
   uploadBytes(imagRef, file)
@@ -34,7 +34,7 @@ export class ImagenservService {
 
 
 getImages() {
-const imagRef = ref(this.storage, 'image');
+const imagRef = ref(this.storage, 'descrip');
 console.log('xd' + imagRef);
 console.log('Uplo' + imagRef);
 const images = getDownloadURL(imagRef);
